@@ -1,0 +1,111 @@
+name: Validate Skills
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Validate skill structure
+      run: |
+        echo "Validating skill structure..."
+        
+        # Check if skills directory exists
+        if [ ! -d "skills" ]; then
+          echo "Error: skills directory not found"
+          exit 1
+        fi
+        
+        # Validate each skill directory
+        VALIDATION_FAILED=0
+        
+        for skill_dir in skills/*/; do
+          if [ -d "$skill_dir" ]; then
+            skill_name=$(basename "$skill_dir")
+            
+            # Skip index.json
+            if [ "$skill_name" = "index.json" ]; then
+              continue
+            fi
+            
+            echo "Validating skill: $skill_name"
+            
+            # Check if skill.json exists
+            if [ ! -f "$skill_dir/skill.json" ]; then
+              echo "  ✗ Error: skill.json not found in $skill_name"
+              VALIDATION_FAILED=1
+              continue
+            fi
+            
+            # Validate JSON format
+            if ! jq empty "$skill_dir/skill.json" 2>/dev/null; then
+              echo "  ✗ Error: Invalid JSON in $skill_name/skill.json"
+              VALIDATION_FAILED=1
+              continue
+            fi
+            
+            # Validate required fields
+            NAME=$(jq -r '.name // empty' "$skill_dir/skill.json")
+            if [ -z "$NAME" ]; then
+              echo "  ✗ Error: Missing 'name' field in $skill_name/skill.json"
+              VALIDATION_FAILED=1
+              continue
+            fi
+            
+            # Check if README.md exists
+            if [ ! -f "$skill_dir/README.md" ]; then
+              echo "  ⚠ Warning: README.md not found in $skill_name (recommended)"
+            fi
+            
+            echo "  ✓ $skill_name validated successfully"
+          fi
+        done
+        
+        if [ $VALIDATION_FAILED -eq 1 ]; then
+          echo ""
+          echo "Validation failed! Please fix the errors above."
+          exit 1
+        fi
+        
+        echo ""
+        echo "All skills validated successfully!"
+
+    - name: Generate index
+      run: node scripts/generate-index.js
+
+    - name: Validate index.json
+      run: |
+        if [ ! -f "skills/index.json" ]; then
+          echo "Error: index.json was not generated"
+          exit 1
+        fi
+        
+        if ! jq empty skills/index.json 2>/dev/null; then
+          echo "Error: Generated index.json is not valid JSON"
+          exit 1
+        fi
+        
+        echo "✓ index.json is valid"
+
+    - name: Check for uncommitted index changes
+      run: |
+        if [ -n "$(git status --porcelain skills/index.json)" ]; then
+          echo "⚠ Warning: index.json has uncommitted changes"
+          echo "Please run 'node scripts/generate-index.js' and commit the changes"
+          git diff skills/index.json
+          exit 1
+        fi
+        echo "✓ index.json is up to date"

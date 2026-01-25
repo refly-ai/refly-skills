@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-01-25T05:02:23.138Z",
+  "count": 1,
+  "skills": [
+    {
+      "name": "example-skill",
+      "version": "1.0.0",
+      "description": "An example skill demonstrating the skill structure",
+      "author": "Refly AI Team",
+      "tags": [
+        "example",
+        "demo"
+      ],
+      "repository": "https://github.com/refly-ai/refly-skills",
+      "path": "skills/example-skill"
+    }
+  ]
+}

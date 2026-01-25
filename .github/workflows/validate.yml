@@ -1,0 +1,57 @@
+name: Validate Skill PR
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: skills/**
+
+      - name: Validate skill.json files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ "$file" == */skill.json ]]; then
+              echo "Validating $file..."
+              # Check if file is valid JSON
+              if ! jq empty "$file" 2>/dev/null; then
+                echo "Error: $file is not valid JSON"
+                exit 1
+              fi
+              # Check required fields
+              for field in name skillId version description author installCommand; do
+                if ! jq -e ".$field" "$file" > /dev/null 2>&1; then
+                  echo "Error: $file is missing required field: $field"
+                  exit 1
+                fi
+              done
+              echo "$file is valid"
+            fi
+          done
+
+      - name: Validate README.md files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            if [[ "$file" == */README.md && "$file" == skills/* ]]; then
+              echo "Validating $file..."
+              # Check if README contains installation section
+              if ! grep -q "## Installation" "$file"; then
+                echo "Warning: $file is missing Installation section"
+              fi
+              echo "$file checked"
+            fi
+          done

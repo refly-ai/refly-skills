@@ -1,0 +1,28 @@
+{
+  "name": "image-gen",
+  "displayName": "image-gen",
+  "description": "AI image generation using Nano Banana Pro. Generate high-quality images from text prompts with customizable aspect ratios.",
+  "version": "1.0.0",
+  "skillId": "skp-qh1yn8ipddw5p8sfcyq65gfz",
+  "author": {
+    "uid": "u-cl0p0iq20p0wjxa300oefkhi",
+    "name": "chizblank"
+  },
+  "triggers": [
+    "generate image",
+    "create image",
+    "画图",
+    "生成图片",
+    "make image"
+  ],
+  "tags": [
+    "image",
+    "generation",
+    "ai",
+    "nano-banana"
+  ],
+  "installCommand": "refly skill install skp-qh1yn8ipddw5p8sfcyq65gfz",
+  "reflyUrl": "https://refly.ai/skill/skp-qh1yn8ipddw5p8sfcyq65gfz",
+  "createdAt": "2026-01-23T10:21:06.070Z",
+  "updatedAt": "2026-01-25T06:34:26.699Z"
+}

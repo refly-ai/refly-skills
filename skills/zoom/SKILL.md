@@ -1,6 +1,6 @@
 ---
 name: zoom
-description: Integrate with Zoom for video meetings. Use when you need to: (1) schedule Zoom meetings, (2) create instant meetings, or (3) manage meeting details and invitations programmatically.
+description: "Integrate with Zoom for video meetings. Use when you need to: (1) schedule Zoom meetings, (2) create instant meetings, or (3) manage meeting details and invitations programmatically."
 skillId: skp-j6gbs1kwum5hzso01vfqip48
 workflowId: see-workflow-mapping
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: hunter
-description: Find emails with Hunter.io. Use when you need to: (1) discover professional email addresses, (2) verify email deliverability, or (3) find contacts at companies.
+description: "Find emails with Hunter.io. Use when you need to: (1) discover professional email addresses, (2) verify email deliverability, or (3) find contacts at companies."
 skillId: skp-g7bj2qtltd8q0wugddjynbu0
 workflowId: see-workflow-mapping
 version: 1.0.0

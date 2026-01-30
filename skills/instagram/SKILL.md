@@ -1,6 +1,6 @@
 ---
 name: instagram
-description: Integrate with Instagram for social media. Use when you need to: (1) post content to Instagram, (2) manage media and insights, or (3) automate Instagram publishing workflows.
+description: "Integrate with Instagram for social media. Use when you need to: (1) post content to Instagram, (2) manage media and insights, or (3) automate Instagram publishing workflows."
 skillId: skp-egurs3nyo1s6488eccidxo3x
 workflowId: see-workflow-mapping
 version: 1.0.0

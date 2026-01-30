@@ -1,6 +1,6 @@
 ---
 name: nano-banana-pro
-description: Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). Use when you need to: (1) generate images from text descriptions, (2) edit existing images with AI, (3) compose multiple images into one scene. Supports 1K/2K/4K resolutions and up to 14 input images for composition.
+description: "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro). Use when you need to: (1) generate images from text descriptions, (2) edit existing images with AI, (3) compose multiple images into one scene. Supports 1K/2K/4K resolutions and up to 14 input images for composition."
 skillId: skp-ud4d5kijwrf8k18muzmhwv9y
 workflowId: see-workflow-mapping
 triggers:

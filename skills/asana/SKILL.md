@@ -1,6 +1,6 @@
 ---
 name: asana
-description: Integrate with Asana for task management. Use when you need to: (1) create and manage Asana tasks, (2) organize project work, or (3) automate team task tracking workflows.
+description: "Integrate with Asana for task management. Use when you need to: (1) create and manage Asana tasks, (2) organize project work, or (3) automate team task tracking workflows."
 skillId: skp-aghvdv09cw7wk5nocsp3w07u
 workflowId: see-workflow-mapping
 version: 1.0.0

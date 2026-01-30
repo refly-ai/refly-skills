@@ -1,6 +1,6 @@
 ---
 name: microsoft-teams
-description: Integrate with Microsoft Teams for collaboration. Use when you need to: (1) send messages to Teams channels, (2) post team notifications, or (3) automate Teams communication workflows.
+description: "Integrate with Microsoft Teams for collaboration. Use when you need to: (1) send messages to Teams channels, (2) post team notifications, or (3) automate Teams communication workflows."
 skillId: skp-eo9basul0urf7ndz6qp02yys
 workflowId: see-workflow-mapping
 version: 1.0.0

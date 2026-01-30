@@ -1,6 +1,6 @@
 ---
 name: stripe
-description: Integrate with Stripe for payment processing. Use when you need to: (1) manage customers and payments, (2) create invoices and subscriptions, or (3) automate billing workflows.
+description: "Integrate with Stripe for payment processing. Use when you need to: (1) manage customers and payments, (2) create invoices and subscriptions, or (3) automate billing workflows."
 skillId: skp-mfyz61qqatnfv05xj9nruiom
 workflowId: see-workflow-mapping
 version: 1.0.0

@@ -1,6 +1,6 @@
 ---
 name: trello
-description: Integrate with Trello for project management. Use when you need to: (1) create and manage Trello cards, (2) organize tasks in lists and boards, or (3) automate project tracking workflows.
+description: "Integrate with Trello for project management. Use when you need to: (1) create and manage Trello cards, (2) organize tasks in lists and boards, or (3) automate project tracking workflows."
 skillId: skp-x4da1f3j06ctgybq9ifva7i3
 workflowId: see-workflow-mapping
 version: 1.0.0

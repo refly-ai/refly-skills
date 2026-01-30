@@ -1,6 +1,6 @@
 ---
 name: perplexity
-description: AI-powered search and chat with Perplexity. Use when you need to: (1) get AI responses with real-time web search, (2) perform batch research queries, or (3) answer questions with up-to-date information.
+description: "AI-powered search and chat with Perplexity. Use when you need to: (1) get AI responses with real-time web search, (2) perform batch research queries, or (3) answer questions with up-to-date information."
 skillId: skp-rkmnjbtpxxpidhck89q60yvt
 workflowId: see-workflow-mapping
 version: 1.0.0

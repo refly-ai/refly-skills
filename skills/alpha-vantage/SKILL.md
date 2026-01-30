@@ -1,6 +1,6 @@
 ---
 name: alpha-vantage
-description: Get financial data from Alpha Vantage. Use when you need to: (1) retrieve stock quotes and prices, (2) get forex or crypto rates, or (3) access market analytics data.
+description: "Get financial data from Alpha Vantage. Use when you need to: (1) retrieve stock quotes and prices, (2) get forex or crypto rates, or (3) access market analytics data."
 skillId: skp-ahnvmq2x5yzok9ufdvt3rlzr
 workflowId: see-workflow-mapping
 version: 1.0.0

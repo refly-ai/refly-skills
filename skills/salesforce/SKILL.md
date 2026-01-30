@@ -1,6 +1,6 @@
 ---
 name: salesforce
-description: Integrate with Salesforce for CRM operations. Use when you need to: (1) create and query Salesforce records, (2) manage accounts and opportunities, or (3) automate sales workflows.
+description: "Integrate with Salesforce for CRM operations. Use when you need to: (1) create and query Salesforce records, (2) manage accounts and opportunities, or (3) automate sales workflows."
 skillId: skp-siml24dbdrn4obppygeaq8kc
 workflowId: see-workflow-mapping
 version: 1.0.0

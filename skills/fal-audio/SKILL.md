@@ -1,6 +1,6 @@
 ---
 name: fal-audio
-description: Generate AI audio using Fal.ai audio models. Use when you need to: (1) convert text to natural speech, (2) create podcast-style audio content, or (3) clone voices from audio samples.
+description: "Generate AI audio using Fal.ai audio models. Use when you need to: (1) convert text to natural speech, (2) create podcast-style audio content, or (3) clone voices from audio samples."
 skillId: skp-rp9vuflwd7rbpz69qpes5b7q
 workflowId: see-workflow-mapping
 version: 1.0.0

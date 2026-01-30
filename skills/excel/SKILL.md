@@ -1,6 +1,6 @@
 ---
 name: excel
-description: Integrate with Microsoft Excel for spreadsheets. Use when you need to: (1) read and write Excel data, (2) manage spreadsheet workbooks, or (3) automate data analysis workflows.
+description: "Integrate with Microsoft Excel for spreadsheets. Use when you need to: (1) read and write Excel data, (2) manage spreadsheet workbooks, or (3) automate data analysis workflows."
 skillId: skp-qd0qwkkmoeategaqcxa4f82v
 workflowId: see-workflow-mapping
 version: 1.0.0

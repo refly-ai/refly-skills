@@ -1,6 +1,6 @@
 ---
 name: linkup
-description: Find LinkedIn contacts with Linkup. Use when you need to: (1) search professional profiles, (2) discover LinkedIn contacts, or (3) enrich professional network data.
+description: "Find LinkedIn contacts with Linkup. Use when you need to: (1) search professional profiles, (2) discover LinkedIn contacts, or (3) enrich professional network data."
 skillId: skp-h8jjeyq2aot0hbjzedysxrbu
 workflowId: see-workflow-mapping
 version: 1.0.0

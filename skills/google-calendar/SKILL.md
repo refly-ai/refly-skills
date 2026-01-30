@@ -1,6 +1,6 @@
 ---
 name: google-calendar
-description: Integrate with Google Calendar for scheduling. Use when you need to: (1) create calendar events, (2) manage schedules and appointments, or (3) automate calendar-based workflows.
+description: "Integrate with Google Calendar for scheduling. Use when you need to: (1) create calendar events, (2) manage schedules and appointments, or (3) automate calendar-based workflows."
 skillId: skp-x4o2qjfir2y5e50plhdwf4k3
 workflowId: see-workflow-mapping
 version: 1.0.0

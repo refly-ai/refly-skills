@@ -1,6 +1,6 @@
 ---
 name: gitlab
-description: Integrate with GitLab for DevOps. Use when you need to: (1) create and manage GitLab issues, (2) trigger CI/CD pipelines, or (3) automate development workflows.
+description: "Integrate with GitLab for DevOps. Use when you need to: (1) create and manage GitLab issues, (2) trigger CI/CD pipelines, or (3) automate development workflows."
 skillId: skp-rg8rbai7fz8r8tmw7cwbylnu
 workflowId: see-workflow-mapping
 version: 1.0.0

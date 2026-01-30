@@ -1,6 +1,6 @@
 ---
 name: google-analytics
-description: Integrate with Google Analytics for web metrics. Use when you need to: (1) retrieve website analytics reports, (2) track traffic and user metrics, or (3) analyze web performance data.
+description: "Integrate with Google Analytics for web metrics. Use when you need to: (1) retrieve website analytics reports, (2) track traffic and user metrics, or (3) analyze web performance data."
 skillId: skp-pd5q1x9nd5zoqjihacwf7apk
 workflowId: see-workflow-mapping
 version: 1.0.0

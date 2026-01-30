@@ -1,6 +1,6 @@
 ---
 name: apollo
-description: Search sales leads with Apollo.io. Use when you need to: (1) find company and contact information, (2) enrich lead data, or (3) search for B2B prospects.
+description: "Search sales leads with Apollo.io. Use when you need to: (1) find company and contact information, (2) enrich lead data, or (3) search for B2B prospects."
 skillId: skp-urczy0rdx7skwsk7s93fnqb0
 workflowId: see-workflow-mapping
 version: 1.0.0

@@ -1,8 +1,35 @@
-# Refly Skills
+<div align="center">
 
-The official skill registry for [Refly](https://refly.ai). Skills are reusable workflow templates that extend Refly's capabilities through AI-powered automation.
+<h1 align="center" style="border-bottom: none">
+    <b>
+        <a href="https://refly.ai">Refly Skills</a><br>
+    </b>
+    ⭐️ Official Skill Registry for Refly.AI ⭐️ <br>
+</h1>
 
-Browse all skills at [skills.sh](https://skills.sh)
+</div>
+
+Skills are reusable workflow templates that extend Refly's capabilities through AI-powered automation. Build, share, and monetize your skills on the Refly platform.
+
+- **Ready-to-use**: Install skills with a single command and start automating immediately.
+- **Community-driven**: Discover skills created by the community or publish your own.
+
+<div align="center">
+
+[Skills Marketplace](https://skills.sh) · [Refly Cloud](https://refly.ai/) · [Forum](https://github.com/refly-ai/refly/discussions) · [Discord](https://discord.gg/YVuYFjFvRC) · [Twitter](https://x.com/reflyai) · [Documentation](https://docs.refly.ai/)
+
+<p align="center">
+    <a href="https://refly.ai" target="_blank">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Product-F04438"></a>
+    <a href="https://refly.ai/pricing" target="_blank">
+        <img alt="Static Badge" src="https://img.shields.io/badge/free-pricing?logo=free&color=%20%23155EEF&label=pricing&labelColor=%20%23528bff"></a>
+    <a href="https://discord.gg/YVuYFjFvRC" target="_blank">
+        <img alt="Discord Chat" src="https://img.shields.io/discord/1323513432686989362?label=chat&logo=discord&logoColor=white&style=flat&color=5865F2"></a>
+    <a href="https://x.com/reflyai" target="_blank">
+        <img alt="Static Badge" src="https://img.shields.io/twitter/follow/reflyai"></a>
+</p>
+
+</div>
 
 ## Installation
 
@@ -162,10 +189,26 @@ description: Use when you need to...
 
 ## Contributing
 
+| Bug Reports | Feature Requests | Issues/Discussions | ReflyAI Community |
+|-------------|------------------|-------------------|-------------------|
+| [Create Bug Report](https://github.com/refly-ai/refly-skills/issues/new/choose) | [Submit Feature Request](https://github.com/refly-ai/refly-skills/pulls) | [View GitHub Discussions](https://github.com/refly-ai/refly/discussions) | [Visit ReflyAI Community](https://docs.refly.ai/community/contact-us) |
+| Something isn't working as expected | Ideas for new skills or improvements | Discuss and raise questions | A place to ask questions, learn, and connect with others |
+
 1. Create your skill with `refly skill create <name>`
 2. Develop and test locally
 3. Publish with `refly skill publish <skill-id>`
 4. A pull request will be automatically created for review
+
+## Community and Contact
+
+- [GitHub Discussion](https://github.com/refly-ai/refly/discussions): Best for sharing feedback and asking questions.
+- [GitHub Issues](https://github.com/refly-ai/refly-skills/issues): Best for reporting bugs and suggesting features.
+- [Discord](https://discord.gg/YVuYFjFvRC): Best for sharing your skills and interacting with the community.
+- [X(Twitter)](https://x.com/reflyai): Best for sharing your skills and staying connected with the community.
+
+## Security Issues
+
+To protect your privacy, please avoid posting security-related issues on GitHub. Instead, send your questions to [support@refly.ai](mailto:support@refly.ai), and we will provide you with a more detailed response.
 
 ## License
 

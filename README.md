@@ -16,7 +16,7 @@ Skills are reusable workflow templates that extend Refly's capabilities through 
 
 <div align="center">
 
-[Skills Marketplace](https://skills.sh) · [Refly Cloud](https://refly.ai/) · [Forum](https://github.com/refly-ai/refly/discussions) · [Discord](https://discord.gg/YVuYFjFvRC) · [Twitter](https://x.com/reflyai) · [Documentation](https://docs.refly.ai/)
+[Refly Cloud](https://refly.ai/) · [Forum](https://github.com/refly-ai/refly/discussions) · [Discord](https://discord.gg/YVuYFjFvRC) · [Twitter](https://x.com/reflyai) · [Documentation](https://docs.refly.ai/)
 
 <p align="center">
     <a href="https://refly.ai" target="_blank">

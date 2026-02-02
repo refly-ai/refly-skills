@@ -19,16 +19,34 @@ Provide input as JSON:
 ```json
 {
   "prompt": "Text description of the image you want to generate (e.g., 'a serene mountain landscape at sunset with vibrant colors')",
-  "reference_image": "<file-reference>",
+  "reference_image": "<file-id>",
   "image_size": "Image dimensions (e.g., 'square', 'landscape_16_9', 'portrait_9_16', or custom like '1024x768')",
   "num_images": "Number of images to generate (1-4)"
 }
 ```
 
+**Note on File Input:**
+- `reference_image` is optional and requires a **file ID** (format: `df-xxxxx`) if provided
+- **How to get file ID:**
+  1. Upload your reference image to Refly using `refly file upload <file-path>`
+  2. Copy the returned file ID from the upload response
+  3. Use this file ID in the input JSON
+- Omit `reference_image` for pure text-to-image generation
+
 ## Execution (Pattern A: File Generation)
+
+### Step 0 (Optional): Upload Reference Image
+
+```bash
+# Upload a reference image if you want to use one
+REF_RESULT=$(refly file upload /path/to/reference.jpg)
+REF_FILE_ID=$(echo "$REF_RESULT" | jq -r '.payload.fileId')
+echo "Reference image file ID: $REF_FILE_ID"
+```
 
 ### Step 1: Run the Skill and Get Run ID
 
+**Example 1: Text-to-Image (No Reference)**
 ```bash
 RESULT=$(refly skill run --id skpi-g7ydq91v0sdvpm3t53h961vg --input '{
   "prompt": "a serene mountain landscape at sunset with vibrant colors",
@@ -36,7 +54,18 @@ RESULT=$(refly skill run --id skpi-g7ydq91v0sdvpm3t53h961vg --input '{
   "num_images": "1"
 }')
 RUN_ID=$(echo "$RESULT" | jq -r '.payload.workflowExecutions[0].id')
-# RUN_ID is we-xxx format, use this for workflow commands
+```
+
+**Example 2: Image-to-Image (With Reference)**
+```bash
+# Use the REF_FILE_ID from Step 0
+RESULT=$(refly skill run --id skpi-g7ydq91v0sdvpm3t53h961vg --input '{
+  "prompt": "transform this into a watercolor painting style",
+  "reference_image": "'"$REF_FILE_ID"'",
+  "image_size": "landscape_16_9",
+  "num_images": "1"
+}')
+RUN_ID=$(echo "$RESULT" | jq -r '.payload.workflowExecutions[0].id')
 ```
 
 ### Step 2: Open Workflow in Browser and Wait for Completion

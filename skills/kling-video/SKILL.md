@@ -28,26 +28,64 @@ Provide input as JSON:
 ```json
 {
   "video_prompt": "Text description for the video you want to generate (e.g., 'A cat walking in a futuristic city at sunset')",
-  "image_url": "Optional: URL of an image to use as the starting frame for image-to-video generation",
-  "video_url": "Optional: URL of a video to transform with video-to-video generation",
+  "image_url": "<file-id>",
+  "video_url": "<file-id>",
   "model_version": "Kling model to use: 'o1' for advanced reasoning or 'v2.6' for premium visuals",
   "duration": "Video duration in seconds (5-10s supported)",
   "aspect_ratio": "Video aspect ratio: '16:9' (landscape), '9:16' (portrait), or '1:1' (square)"
 }
 ```
 
+**Note on File Inputs:**
+- `image_url` and `video_url` require a **file ID** (format: `df-xxxxx`)
+- **How to get file ID:**
+  1. Upload your file to Refly using `refly file upload <file-path>`
+  2. Copy the returned file ID from the upload response
+  3. Use this file ID in the input JSON
+- For text-to-video mode, omit both `image_url` and `video_url`
+- For image-to-video mode, provide `image_url`
+- For video-to-video mode, provide `video_url`
+
 ## Execution (Pattern A: File Generation)
+
+### Step 0 (Optional): Upload Files for Image/Video-to-Video Modes
+
+```bash
+# Upload an image for image-to-video
+IMAGE_RESULT=$(refly file upload /path/to/your/image.jpg)
+IMAGE_FILE_ID=$(echo "$IMAGE_RESULT" | jq -r '.payload.fileId')
+echo "Image file ID: $IMAGE_FILE_ID"
+
+# Or upload a video for video-to-video
+VIDEO_RESULT=$(refly file upload /path/to/your/video.mp4)
+VIDEO_FILE_ID=$(echo "$VIDEO_RESULT" | jq -r '.payload.fileId')
+echo "Video file ID: $VIDEO_FILE_ID"
+```
 
 ### Step 1: Run the Skill and Get Run ID
 
+**Example 1: Text-to-Video**
 ```bash
 RESULT=$(refly skill run --id skpi-rzakvguz9m7memgp3o6dokta --input '{
   "video_prompt": "A cat walking through a futuristic city at sunset",
   "duration": "5",
-  "aspect_ratio": "16:9"
+  "aspect_ratio": "16:9",
+  "model_version": "v2.6"
 }')
 RUN_ID=$(echo "$RESULT" | jq -r '.payload.workflowExecutions[0].id')
-# RUN_ID is we-xxx format, use this for workflow commands
+```
+
+**Example 2: Image-to-Video**
+```bash
+# Use the IMAGE_FILE_ID from Step 0
+RESULT=$(refly skill run --id skpi-rzakvguz9m7memgp3o6dokta --input '{
+  "video_prompt": "Camera slowly zooms in on the scene",
+  "image_url": "'"$IMAGE_FILE_ID"'",
+  "duration": "5",
+  "aspect_ratio": "16:9",
+  "model_version": "v2.6"
+}')
+RUN_ID=$(echo "$RESULT" | jq -r '.payload.workflowExecutions[0].id')
 ```
 
 ### Step 2: Open Workflow in Browser and Wait for Completion

@@ -2,7 +2,7 @@
 name: github
 description: Integrate with GitHub for repository management and collaboration. Use when you need to: (1) manage repositories, issues, and pull requests, (2) search code and repositories, (3) manage collaborators and teams, or (4) automate GitHub workflows.
 skillId: skp-n66acwiuci1z1xgvol5nz8mz
-workflowId: see-workflow-mapping
+workflowId: c-k1f35prz9mgwm07jhjosgh5m
 triggers:
   - github
   - repository

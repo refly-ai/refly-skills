@@ -2,7 +2,7 @@
 name: google-drive
 description: Integrate with Google Drive for cloud storage management. Use when you need to: (1) upload and download files from Drive, (2) create folders and organize files, (3) share files and manage permissions, or (4) search and list files in Drive storage.
 skillId: skp-olowtkwz7mrxmcjs3vmgwgr7
-workflowId: see-workflow-mapping
+workflowId: c-yqwu3z0048eaagdlxzinagbr
 triggers:
   - google drive
   - drive

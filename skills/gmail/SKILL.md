@@ -2,7 +2,7 @@
 name: gmail
 description: Integrate with Gmail for email management and automation. Use when you need to: (1) send and compose emails with attachments, (2) read and search emails by criteria, (3) manage drafts and email labels, or (4) reply to email threads and conversations.
 skillId: skp-law87xgmyelzh4rgftrul23w
-workflowId: see-workflow-mapping
+workflowId: c-xqkgbxalqguze8wt9a1a4llc
 triggers:
   - gmail
   - email

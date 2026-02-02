@@ -2,7 +2,7 @@
 name: twitter
 description: Integrate with Twitter for social media management and engagement. Use when you need to: (1) post tweets and create threads, (2) reply to tweets and engage with users, (3) search tweets and trending topics, or (4) manage direct messages and follower interactions.
 skillId: skp-y0gd3zzmxr9n3xmyxhkaxfy4
-workflowId: see-workflow-mapping
+workflowId: c-hiu3wipussxgo1ul98gf995b
 triggers:
   - twitter
   - tweet

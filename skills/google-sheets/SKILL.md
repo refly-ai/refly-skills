@@ -2,7 +2,7 @@
 name: google-sheets
 description: Integrate with Google Sheets for spreadsheet management and data processing. Use when you need to: (1) create and update spreadsheets, (2) read and write cell data in ranges, (3) manage sheets and formatting, or (4) create charts and analyze data in spreadsheets.
 skillId: skp-lswnoe9hiesmyfaqqeyyhszf
-workflowId: see-workflow-mapping
+workflowId: c-p51typpuu6p5rjhyhtw1n08w
 triggers:
   - google sheets
   - sheets

@@ -33,7 +33,6 @@ ready to use in Claude Code, Cursor, and MCP-powered workflows.
 </p>
 
 </div>
----
 
 ## Installation
 

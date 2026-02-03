@@ -33,16 +33,17 @@ ready to use in Claude Code, Cursor, and MCP-powered workflows.
 </p>
 
 </div>
+---
 
 ## Installation
 
-### Install Refly CLI
+**Install Refly CLI**
 
 ```bash
 npm install -g @powerformer/refly-cli@0.1.25
 ```
 
-### Install a Skill
+**Install a Skill**
 
 ```bash
 # Via Refly CLI
@@ -52,12 +53,12 @@ refly skill install <skill-id>
 npx skills add refly-ai/<skill-name>
 ```
 
-### Publish a Skill
+**Publish a Skill**
 
 ```bash
 refly skill publish <skill-id>
 ```
-
+---
 ## Skills
 
 ### AI Image Generation
@@ -173,6 +174,7 @@ refly skill publish <skill-id>
 | [social-trend-monitor](./skills/social-trend-monitor) | Monitor social media trends and analytics. |
 | [youtube-video-analyzer](./skills/youtube-video-analyzer) | Analyze YouTube videos for insights and metrics. |
 
+---
 ## Structure
 
 Each skill contains:
@@ -189,7 +191,7 @@ description: Use when you need to...
 # Skill Content
 ...
 ```
-
+---
 ## Contributing
 
 | Bug Reports | Feature Requests | Issues/Discussions | ReflyAI Community |
@@ -201,17 +203,19 @@ description: Use when you need to...
 2. Develop and test locally
 3. Publish with `refly skill publish <skill-id>`
 4. A pull request will be automatically created for review
-
+---
 ## Community and Contact
 
 - [GitHub Discussion](https://github.com/refly-ai/refly/discussions): Best for sharing feedback and asking questions.
 - [GitHub Issues](https://github.com/refly-ai/refly-skills/issues): Best for reporting bugs and suggesting features.
 - [Discord](https://discord.gg/YVuYFjFvRC): Best for sharing your skills and interacting with the community.
 - [X(Twitter)](https://x.com/reflyai): Best for sharing your skills and staying connected with the community.
-
+---
 ## Security Issues
 
 To protect your privacy, please avoid posting security-related issues on GitHub. Instead, send your questions to [support@refly.ai](mailto:support@refly.ai), and we will provide you with a more detailed response.
+
+---
 
 ## License
 

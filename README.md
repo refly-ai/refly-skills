@@ -8,7 +8,7 @@
 </h1>
 
 </div>
-Refly Skills is an open-source library of **production-ready, runnable agent skills**.<br>
+Refly Skills is an open-source library of production-ready, runnable agent skills.<br>
 Every skill ships with a stable interface, deterministic execution, and one-click runtime inside Refly —  
 ready to use in Claude Code, Cursor, and MCP-powered workflows.
 

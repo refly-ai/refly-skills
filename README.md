@@ -9,7 +9,8 @@
 
 </div>
 
-Skills are reusable workflow templates that extend Refly's capabilities through AI-powered automation. Build, share, and monetize your skills on the Refly platform.
+Skills are reusable workflow templates that extend Refly's capabilities through AI-powered automation. 
+Build, share, and monetize your skills on the Refly platform.
 
 - **Ready-to-use**: Install skills with a single command and start automating immediately.
 - **Community-driven**: Discover skills created by the community or publish your own.

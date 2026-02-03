@@ -18,23 +18,40 @@ Provide input as JSON:
 
 ```json
 {
-  "input_image": "<file-reference>",
+  "input_image": "<file-id>",
   "motion_prompt": "Describe the motion or animation you want (e.g., 'camera slowly zooms in', 'character waves hand', 'leaves gently swaying in wind')",
   "video_duration": "Desired video duration in seconds (typically 3-10 seconds)"
 }
 ```
 
+**Note on File Input:**
+- `input_image` requires a **file ID** (format: `df-xxxxx`)
+- **How to get file ID:**
+  1. Upload your image file to Refly using `refly file upload <file-path>`
+  2. Copy the returned file ID from the upload response
+  3. Use this file ID in the input JSON
+
 ## Execution (Pattern A: File Generation)
+
+### Step 0: Upload Image File
+
+```bash
+# Upload your image
+IMAGE_RESULT=$(refly file upload /path/to/your/image.jpg)
+IMAGE_FILE_ID=$(echo "$IMAGE_RESULT" | jq -r '.payload.fileId')
+echo "Image file ID: $IMAGE_FILE_ID"
+```
 
 ### Step 1: Run the Skill and Get Run ID
 
 ```bash
+# Use the IMAGE_FILE_ID from Step 0
 RESULT=$(refly skill run --id skpi-aeg736kbicr5zzzwgiyn7me3 --input '{
-  "input_image": "https://example.com/image.jpg",
-  "motion_prompt": "gentle camera zoom in"
+  "input_image": "'"$IMAGE_FILE_ID"'",
+  "motion_prompt": "gentle camera zoom in",
+  "video_duration": "5"
 }')
 RUN_ID=$(echo "$RESULT" | jq -r '.payload.workflowExecutions[0].id')
-# RUN_ID is we-xxx format, use this for workflow commands
 ```
 
 ### Step 2: Open Workflow in Browser and Wait for Completion

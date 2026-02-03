@@ -4,16 +4,18 @@
     <b>
         <a href="https://refly.ai">Refly Skills</a><br>
     </b>
-    ⭐️ Official Skill Registry for Refly.AI ⭐️ <br>
+    ⭐️ The Official Executable Skill Registry for Refly ⭐️ <br>
 </h1>
 
 </div>
+Refly Skills is an open-source library of **production-ready, runnable agent skills**.<br>
+Every skill ships with a stable interface, deterministic execution, and one-click runtime inside Refly —  
+ready to use in Claude Code, Cursor, and MCP-powered workflows.
 
-Skills are reusable workflow templates that extend Refly's capabilities through AI-powered automation. <br>
-Build, share, and monetize your skills on the Refly platform.
-
-- **Ready-to-use**: Install skills with a single command and start automating immediately.
-- **Community-driven**: Discover skills created by the community or publish your own.
+- ⚡ **Run instantly** — execute skills in Refly with one click  
+- 🧩 **Reusable infrastructure** — versioned skills, not one-off prompts  
+- 🔌 **Export anywhere** — ship skills to Claude Code or deploy as APIs  
+- 🌍 **Community-powered** — import, fork, and publish your own skills
 
 <div align="center">
 

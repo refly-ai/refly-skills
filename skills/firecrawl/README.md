@@ -19,7 +19,7 @@ firecrawl login --browser
 ## Features
 
 - **Search** - Web, image, and news search with optional scraping of results
-- **Scrape** - Single page content extraction with multiple output formats (markdown, HTML, links, screenshots)
+- **Scrape** - Single page content extraction with multiple output formats (Markdown, HTML, links, screenshots)
 - **Map** - Discover and list all URLs on a site with filtering and subdomain support
 - **Parallel execution** - Run multiple scrapes concurrently up to your concurrency limit
 - **LLM-optimized output** - Clean markdown output designed for AI agent context windows

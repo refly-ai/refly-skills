@@ -23,7 +23,7 @@ firecrawl --status
 
 Output when ready:
 
-```
+```text
   🔥 firecrawl cli v1.0.2
 
   ● Authenticated via FIRECRAWL_API_KEY
@@ -203,7 +203,7 @@ grep -A 10 "## Section" .firecrawl/file.md
 
 ## Format Behavior
 
-- **Single format**: Outputs raw content (markdown text, HTML, etc.)
+- **Single format**: Outputs raw content (Markdown text, HTML, etc.)
 - **Multiple formats**: Outputs JSON with all requested data
 
 ```bash

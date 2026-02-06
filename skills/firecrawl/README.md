@@ -1,8 +1,8 @@
 # firecrawl
 
-Web scraping, searching, and crawling CLI for AI agents. Use when you need to: (1) scrape web pages for clean markdown content, (2) perform web searches with optional page scraping, or (3) discover and map all URLs on a site.
+Web scraping, searching, and crawling CLI for AI agents. Use when you need to: (1) scrape web pages for clean Markdown content, (2) perform web searches with optional page scraping, or (3) discover and map all URLs on a site.
 
-Returns clean markdown optimized for LLM context windows, handles JavaScript rendering, bypasses common blocks, and provides structured data.
+Returns clean Markdown optimized for LLM context windows, handles JavaScript rendering, bypasses common blocks, and provides structured data.
 
 ## Installation
 
@@ -22,7 +22,7 @@ firecrawl login --browser
 - **Scrape** - Single page content extraction with multiple output formats (Markdown, HTML, links, screenshots)
 - **Map** - Discover and list all URLs on a site with filtering and subdomain support
 - **Parallel execution** - Run multiple scrapes concurrently up to your concurrency limit
-- **LLM-optimized output** - Clean markdown output designed for AI agent context windows
+- **LLM-optimized output** - Clean Markdown output designed for AI agent context windows
 
 ## Triggers
 

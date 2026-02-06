@@ -1,13 +1,13 @@
 ---
 name: firecrawl
-description: "Web scraping, searching, and crawling CLI for AI agents. Use when you need to: (1) scrape web pages for clean markdown content, (2) perform web searches with optional page scraping, or (3) discover and map all URLs on a site."
+description: "Web scraping, searching, and crawling CLI for AI agents. Use when you need to: (1) scrape web pages for clean Markdown content, (2) perform web searches with optional page scraping, or (3) discover and map all URLs on a site."
 version: 1.0.0
 category: search-data
 ---
 
 # Firecrawl
 
-Web scraping, searching, and crawling CLI for AI agents. Returns clean markdown optimized for LLM context windows, handles JavaScript rendering, bypasses common blocks, and provides structured data.
+Web scraping, searching, and crawling CLI for AI agents. Returns clean Markdown optimized for LLM context windows, handles JavaScript rendering, bypasses common blocks, and provides structured data.
 
 ## Installation
 
@@ -24,7 +24,7 @@ firecrawl --status
 Output when ready:
 
 ```text
-  🔥 firecrawl cli v1.0.2
+  🔥 firecrawl cli v1.1.1
 
   ● Authenticated via FIRECRAWL_API_KEY
   Concurrency: 0/100 jobs (parallel scrape limit)
@@ -116,7 +116,7 @@ firecrawl search "API docs" --scrape --scrape-formats markdown,links -o .firecra
 
 - `--limit <n>` - Maximum results (default: 5, max: 100)
 - `--sources <sources>` - Comma-separated: web, images, news (default: web)
-- `--categories <categories>` - Comma-separated: github, research, pdf
+- `--categories <categories>` - Comma-separated: GitHub, research, pdf
 - `--tbs <value>` - Time filter: qdr:h (hour), qdr:d (day), qdr:w (week), qdr:m (month), qdr:y (year)
 - `--location <location>` - Geo-targeting (e.g., "Germany")
 - `--country <code>` - ISO country code (default: US)
